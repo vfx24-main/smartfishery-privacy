@@ -96,22 +96,46 @@
   <p>Privacy Policy</p>
 </header>
 <main>
-  <p class="updated">Last updated: 8 July 2026</p>
+  <p class="updated">Last updated: 10 July 2026</p>
 
   <p>Smart Fisheries GY ("the app") is built for Guyana's fisherfolk. It is designed
-  <strong>offline-first</strong>: your data lives on your phone, not on our servers. We operate
-  no accounts system and no backend — we cannot see your data.</p>
+  <strong>offline-first</strong>: everything saves on your phone first and works with no signal.
+  When a connection is available, some of your data syncs to the Smart Fisheries GY database so
+  that safety and community features (like the shared leaderboard and fishing-spots map) can
+  work across phones.</p>
 
-  <h2>What the app stores (on your phone only)</h2>
+  <h2>What the app stores on your phone</h2>
   <ul>
     <li><strong>Profile</strong> you enter: name, phone number, landing site, vessel and gear types.</li>
     <li><strong>Catch logs</strong>: species, weight, optional photo, optional GPS position, notes.</li>
     <li><strong>SOS records</strong>: your emergency contacts, alert history, and the GPS trail recorded during an active SOS.</li>
-    <li><strong>Licence document photos</strong> and the expiry dates you confirm (read on-device; images never leave your phone).</li>
-    <li><strong>Illegal-fishing (IUU) reports</strong> you compose, until they are sent.</li>
+    <li><strong>Licence document photos</strong> and the expiry dates you confirm (read on-device; <strong>licence photos never leave your phone</strong>).</li>
+    <li><strong>Illegal-fishing (IUU) reports</strong> you compose.</li>
   </ul>
-  <p>All of the above is stored locally (app database/preferences). Deleting the app
-  deletes this data. There is no cloud copy.</p>
+
+  <h2>What syncs to our database (when you have signal)</h2>
+  <p>Each phone gets an anonymous account automatically — no password, no email. Against that
+  account we store:</p>
+  <ul>
+    <li>your <strong>profile</strong> (name, phone number, landing site, vessel and gear types),</li>
+    <li>your <strong>catch logs</strong> (including the photo, if one was taken),</li>
+    <li>your <strong>SOS alert records</strong> — position, message, the trail, and which contact numbers the alert was addressed to (so a rescue picture exists beyond one phone),</li>
+    <li>your <strong>IUU reports</strong> for hand-over to the Fisheries Department — <strong>unless you chose "report anonymously"</strong>, in which case the report is stored with no link to you at all,</li>
+    <li>catches you <strong>explicitly share to the public Spots map</strong> (see below).</li>
+  </ul>
+  <p>The database is hosted on Supabase infrastructure. We use it only to run the app's
+  features — nothing is sold, and there are still <strong>no ads, no analytics, and no
+  trackers</strong>.</p>
+
+  <h2>The Spots map is public — by your choice only</h2>
+  <p>Sharing a catch to the fishing-spots map is an off-by-default switch shown at save time.
+  If you turn it on, that catch's <strong>photo, location, species and your first name</strong>
+  become visible to every user of the app. Don't share spots you want to keep to yourself.</p>
+
+  <h2>Deleting your data</h2>
+  <p>"Delete account &amp; all data" (in More) erases everything on the phone <strong>and</strong>
+  your synced records in our database. Anonymous IUU reports can't be traced to you and
+  therefore also can't be individually deleted on request.</p>
 
   <h2>Location</h2>
   <p>The app uses your device's GPS to:</p>
@@ -147,9 +171,9 @@
   no analytics, and no trackers</strong>.</p>
 
   <h2>Data sharing</h2>
-  <p>We share nothing, because nothing reaches us. Data leaves your phone only when
-  <strong>you</strong> act: sending an SOS SMS, or submitting an IUU report through the app's
-  queue (relayed to the Fisheries Department's contact channels).</p>
+  <p>We do not sell or share your data with anyone. The only outward flows are the ones you
+  trigger yourself: an SOS SMS to your chosen contacts, an IUU report queued for the Fisheries
+  Department, and catches you chose to publish on the Spots map.</p>
 
   <h2>Children</h2>
   <p>The app is intended for working fisherfolk and is not directed at children
